@@ -30,7 +30,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		450270702DBF12E100457F77 /* Exceptions for "ikid" folder in "ikid" target */ = {
+		4502716E2DBF1E9800457F77 /* Exceptions for "ikid" folder in "ikid" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -43,7 +43,7 @@
 		4502704A2DBF12DF00457F77 /* ikid */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				450270702DBF12E100457F77 /* Exceptions for "ikid" folder in "ikid" target */,
+				4502716E2DBF1E9800457F77 /* Exceptions for "ikid" folder in "ikid" target */,
 			);
 			path = ikid;
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ikid temp/Info.plist";
+				INFOPLIST_FILE = ikid/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ikid temp/Info.plist";
+				INFOPLIST_FILE = ikid/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

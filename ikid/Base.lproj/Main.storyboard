@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gt1-aF-1vH">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dad Joke-->
+        <scene sceneID="h3C-Y6-C6P">
+            <objects>
+                <viewController id="RkZ-b8-1wV" customClass="DadJokeViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="myO-eA-w34">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6a-Cv-4Mb">
+                                <rect key="frame" x="126" y="649" width="141" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="VbT-gp-xYB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Next"/>
+                                <connections>
+                                    <action selector="toggleButtonTapped:" destination="RkZ-b8-1wV" eventType="primaryActionTriggered" id="Osh-nX-F2c"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dad Joke" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1p-lm-jKR">
+                                <rect key="frame" x="136" y="118" width="121" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Zmi-xz-CPI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you say to your sister when she's crying?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6E0-3u-HT2">
+                                <rect key="frame" x="20" y="175" width="353" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zTH-2U-79S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zTH-2U-79S" firstAttribute="bottom" secondItem="m6a-Cv-4Mb" secondAttribute="bottom" constant="16" id="5gy-aj-6SY"/>
+                            <constraint firstItem="m6a-Cv-4Mb" firstAttribute="leading" secondItem="zTH-2U-79S" secondAttribute="leading" constant="126" id="AlI-8Y-SA2"/>
+                            <constraint firstItem="X1p-lm-jKR" firstAttribute="top" secondItem="zTH-2U-79S" secondAttribute="top" id="K1i-Xk-sPi"/>
+                            <constraint firstItem="zTH-2U-79S" firstAttribute="trailing" secondItem="6E0-3u-HT2" secondAttribute="trailing" constant="20" id="KQf-O9-Sw3"/>
+                            <constraint firstItem="6E0-3u-HT2" firstAttribute="centerX" secondItem="X1p-lm-jKR" secondAttribute="centerX" id="MHk-RE-bNc"/>
+                            <constraint firstItem="X1p-lm-jKR" firstAttribute="leading" secondItem="zTH-2U-79S" secondAttribute="leading" constant="146" id="SgS-fw-LjF"/>
+                            <constraint firstItem="6E0-3u-HT2" firstAttribute="top" secondItem="X1p-lm-jKR" secondAttribute="bottom" constant="8" id="T4O-2a-EUO"/>
+                            <constraint firstItem="m6a-Cv-4Mb" firstAttribute="centerX" secondItem="X1p-lm-jKR" secondAttribute="centerX" id="alF-u0-5Ku"/>
+                            <constraint firstItem="6E0-3u-HT2" firstAttribute="leading" secondItem="zTH-2U-79S" secondAttribute="leading" constant="20" id="fzJ-9q-jbc"/>
+                            <constraint firstItem="m6a-Cv-4Mb" firstAttribute="centerX" secondItem="myO-eA-w34" secondAttribute="centerX" id="yeu-7v-nLF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad Joke" selectedImage="eyeglasses" catalog="system" id="mBE-HH-KVB"/>
+                    <connections>
+                        <outlet property="jokeLabel" destination="6E0-3u-HT2" id="cBg-zP-kLI"/>
+                        <outlet property="toggleButton" destination="m6a-Cv-4Mb" id="0IF-ap-1wt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fL-ts-6Sy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832.824427480916" y="366.90140845070425"/>
+        </scene>
+        <!--Knock Knock Joke-->
+        <scene sceneID="mKg-bz-11a">
+            <objects>
+                <viewController id="pvj-76-nQH" customClass="KnockKnockJokeViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oyd-0d-93l">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knock Knock." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyz-TP-YVM">
+                                <rect key="frame" x="123" y="187" width="147" height="365"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="372" id="gsd-le-8KF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knock Knock Joke" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rj5-dA-zoS">
+                                <rect key="frame" x="97" y="118" width="199" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="7Va-29-WoK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKo-2B-btl">
+                                <rect key="frame" x="126.33333333333333" y="646" width="140.33333333333337" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="OkG-gC-kJS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="QdX-bO-cuF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="pvj-76-nQH" eventType="primaryActionTriggered" id="fm6-2K-BJA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vZy-oH-mKe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gyz-TP-YVM" firstAttribute="centerX" secondItem="rj5-dA-zoS" secondAttribute="centerX" id="4yk-RH-EEh"/>
+                            <constraint firstItem="pKo-2B-btl" firstAttribute="top" secondItem="gyz-TP-YVM" secondAttribute="bottom" constant="94" id="BnH-DX-aoC"/>
+                            <constraint firstItem="pKo-2B-btl" firstAttribute="top" secondItem="gyz-TP-YVM" secondAttribute="bottom" constant="20" id="KWa-9X-eWG"/>
+                            <constraint firstItem="rj5-dA-zoS" firstAttribute="centerX" secondItem="pKo-2B-btl" secondAttribute="centerX" id="L9b-Qd-tgg"/>
+                            <constraint firstItem="rj5-dA-zoS" firstAttribute="leading" secondItem="vZy-oH-mKe" secondAttribute="leading" constant="97" id="WBz-Ss-0nT"/>
+                            <constraint firstItem="vZy-oH-mKe" firstAttribute="bottom" secondItem="pKo-2B-btl" secondAttribute="bottom" constant="19" id="atl-Tw-y0Q"/>
+                            <constraint firstItem="vZy-oH-mKe" firstAttribute="trailing" secondItem="pKo-2B-btl" secondAttribute="trailing" constant="126.33333333333331" id="fwd-yy-Dmd"/>
+                            <constraint firstItem="gyz-TP-YVM" firstAttribute="centerX" secondItem="Oyd-0d-93l" secondAttribute="centerX" id="oVe-MI-iFD"/>
+                            <constraint firstItem="rj5-dA-zoS" firstAttribute="top" secondItem="vZy-oH-mKe" secondAttribute="top" id="s6c-7t-6PK"/>
+                            <constraint firstItem="gyz-TP-YVM" firstAttribute="top" secondItem="rj5-dA-zoS" secondAttribute="bottom" constant="20" id="snu-qk-z4Y"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Knock Knock Joke" selectedImage="door.left.hand.closed" catalog="system" id="mri-bH-H0W"/>
+                    <connections>
+                        <outlet property="jokeLabel" destination="gyz-TP-YVM" id="4zJ-S2-JjD"/>
+                        <outlet property="nextButton" destination="pKo-2B-btl" id="wKB-4a-zca"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yca-9o-EQE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832.824427480916" y="1091.549295774648"/>
+        </scene>
+        <!--Pun Joke-->
+        <scene sceneID="Hr6-4X-nuI">
+            <objects>
+                <viewController id="aWD-d2-oKd" customClass="PunJokeViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5c8-wk-ySh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you call a fake noodle?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8y-jF-HNM">
+                                <rect key="frame" x="27.333333333333343" y="175" width="338.33333333333326" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pun Joke" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSI-AN-Xzv">
+                                <rect key="frame" x="147.33333333333334" y="118" width="98.666666666666657" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="pho-fz-KHl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xud-U1-tWh">
+                                <rect key="frame" x="126" y="639" width="141" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="XPQ-lZ-2Id"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Next"/>
+                                <connections>
+                                    <action selector="toggleButtonTapped:" destination="aWD-d2-oKd" eventType="primaryActionTriggered" id="23f-KN-2xb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aXg-5p-G8y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G8y-jF-HNM" firstAttribute="centerX" secondItem="5c8-wk-ySh" secondAttribute="centerX" id="4Vt-MY-Ghw"/>
+                            <constraint firstItem="iSI-AN-Xzv" firstAttribute="centerX" secondItem="Xud-U1-tWh" secondAttribute="centerX" id="5KU-qM-jMm"/>
+                            <constraint firstItem="G8y-jF-HNM" firstAttribute="leading" secondItem="aXg-5p-G8y" secondAttribute="leading" constant="27.333333333333343" id="Moi-Zh-bm7"/>
+                            <constraint firstItem="iSI-AN-Xzv" firstAttribute="centerX" secondItem="5c8-wk-ySh" secondAttribute="centerX" id="RFv-2a-CNF"/>
+                            <constraint firstItem="G8y-jF-HNM" firstAttribute="top" secondItem="iSI-AN-Xzv" secondAttribute="bottom" constant="8" id="WRd-LC-XYu"/>
+                            <constraint firstItem="aXg-5p-G8y" firstAttribute="bottom" secondItem="Xud-U1-tWh" secondAttribute="bottom" constant="26" id="azR-rK-D61"/>
+                            <constraint firstItem="Xud-U1-tWh" firstAttribute="leading" secondItem="aXg-5p-G8y" secondAttribute="leading" constant="126" id="lEG-Rl-TUs"/>
+                            <constraint firstItem="aXg-5p-G8y" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="G8y-jF-HNM" secondAttribute="trailing" symbolic="YES" id="opT-ee-CpD"/>
+                            <constraint firstItem="iSI-AN-Xzv" firstAttribute="top" secondItem="aXg-5p-G8y" secondAttribute="top" id="tOV-un-hN5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pun Joke" selectedImage="fork.knife" catalog="system" id="fl2-fb-cGN"/>
+                    <connections>
+                        <outlet property="jokeLabel" destination="G8y-jF-HNM" id="jTa-0n-9iQ"/>
+                        <outlet property="toggleButton" destination="Xud-U1-tWh" id="nnc-Vc-DIX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxA-ua-clu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832.824427480916" y="-299.29577464788736"/>
+        </scene>
+        <!--Good Joke-->
+        <scene sceneID="NJ8-il-n2G">
+            <objects>
+                <viewController id="Hsq-Ew-NHj" customClass="GoodJokeViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Shw-VU-C1k">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know my dad got fired as a road worker for theft?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gl5-SY-IzF">
+                                <rect key="frame" x="38" y="202" width="317" height="89.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Joke" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxB-0Y-Bil">
+                                <rect key="frame" x="138.33333333333334" y="118" width="116.33333333333334" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="anI-0B-1iJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gN2-r1-Xae">
+                                <rect key="frame" x="125" y="649" width="140" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="MSs-5p-imF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Next"/>
+                                <connections>
+                                    <action selector="toggleButtonTapped:" destination="Hsq-Ew-NHj" eventType="primaryActionTriggered" id="I2I-3I-z5o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RTj-U1-4Kg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gN2-r1-Xae" firstAttribute="leading" secondItem="RTj-U1-4Kg" secondAttribute="leading" constant="125" id="3yn-Vy-LeB"/>
+                            <constraint firstItem="BxB-0Y-Bil" firstAttribute="top" secondItem="RTj-U1-4Kg" secondAttribute="top" id="C4v-fU-dKa"/>
+                            <constraint firstItem="gl5-SY-IzF" firstAttribute="leading" secondItem="RTj-U1-4Kg" secondAttribute="leading" constant="38" id="GxO-JU-oqR"/>
+                            <constraint firstItem="RTj-U1-4Kg" firstAttribute="bottom" secondItem="gN2-r1-Xae" secondAttribute="bottom" constant="16" id="JNF-XO-gae"/>
+                            <constraint firstItem="RTj-U1-4Kg" firstAttribute="trailing" secondItem="gN2-r1-Xae" secondAttribute="trailing" constant="128" id="Xlr-OW-vin"/>
+                            <constraint firstItem="gl5-SY-IzF" firstAttribute="centerX" secondItem="Shw-VU-C1k" secondAttribute="centerX" id="luu-Bf-TxU"/>
+                            <constraint firstItem="gl5-SY-IzF" firstAttribute="centerX" secondItem="BxB-0Y-Bil" secondAttribute="centerX" id="rPA-61-epu"/>
+                            <constraint firstItem="gl5-SY-IzF" firstAttribute="top" secondItem="BxB-0Y-Bil" secondAttribute="bottom" constant="35" id="w3Q-91-sqy"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Good Joke" selectedImage="face.smiling" catalog="system" id="iir-v6-jqB"/>
+                    <connections>
+                        <outlet property="jokeLabel" destination="gl5-SY-IzF" id="URj-HT-z1C"/>
+                        <outlet property="toggleButton" destination="gN2-r1-Xae" id="Bl2-Wz-bqm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nSz-di-kYM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832.824427480916" y="-1009.1549295774648"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="oSq-qZ-TXO">
+            <objects>
+                <tabBarController title="Main View Controller" id="gt1-aF-1vH" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XaH-T5-eMq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Hsq-Ew-NHj" kind="relationship" relationship="viewControllers" id="1Ho-Cc-qDQ"/>
+                        <segue destination="aWD-d2-oKd" kind="relationship" relationship="viewControllers" id="LU9-BO-JCL"/>
+                        <segue destination="RkZ-b8-1wV" kind="relationship" relationship="viewControllers" id="dlH-V5-25C"/>
+                        <segue destination="pvj-76-nQH" kind="relationship" relationship="viewControllers" id="68e-pn-P1b"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xuS-6y-l9N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="744" y="46"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="door.left.hand.closed" catalog="system" width="108" height="128"/>
+        <image name="eyeglasses" catalog="system" width="128" height="55"/>
+        <image name="face.smiling" catalog="system" width="128" height="123"/>
+        <image name="fork.knife" catalog="system" width="94" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
