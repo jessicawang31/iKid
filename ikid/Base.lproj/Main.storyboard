@@ -58,7 +58,7 @@
                             <constraint firstItem="m6a-Cv-4Mb" firstAttribute="centerX" secondItem="myO-eA-w34" secondAttribute="centerX" id="yeu-7v-nLF"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dad Joke" selectedImage="eyeglasses" catalog="system" id="mBE-HH-KVB"/>
+                    <tabBarItem key="tabBarItem" title="Dad Joke" image="eyeglasses" catalog="system" selectedImage="eyeglasses" id="mBE-HH-KVB"/>
                     <connections>
                         <outlet property="jokeLabel" destination="6E0-3u-HT2" id="cBg-zP-kLI"/>
                         <outlet property="toggleButton" destination="m6a-Cv-4Mb" id="0IF-ap-1wt"/>
@@ -77,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knock Knock." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyz-TP-YVM">
-                                <rect key="frame" x="123" y="187" width="147" height="365"/>
+                                <rect key="frame" x="123" y="187" width="147" height="439"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="372" id="gsd-le-8KF"/>
                                 </constraints>
@@ -122,7 +122,7 @@
                             <constraint firstItem="gyz-TP-YVM" firstAttribute="top" secondItem="rj5-dA-zoS" secondAttribute="bottom" constant="20" id="snu-qk-z4Y"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Knock Knock Joke" selectedImage="door.left.hand.closed" catalog="system" id="mri-bH-H0W"/>
+                    <tabBarItem key="tabBarItem" title="Knock Knock Joke" image="door.left.hand.closed" catalog="system" selectedImage="door.left.hand.closed" id="mri-bH-H0W"/>
                     <connections>
                         <outlet property="jokeLabel" destination="gyz-TP-YVM" id="4zJ-S2-JjD"/>
                         <outlet property="nextButton" destination="pKo-2B-btl" id="wKB-4a-zca"/>
@@ -181,7 +181,7 @@
                             <constraint firstItem="iSI-AN-Xzv" firstAttribute="top" secondItem="aXg-5p-G8y" secondAttribute="top" id="tOV-un-hN5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Pun Joke" selectedImage="fork.knife" catalog="system" id="fl2-fb-cGN"/>
+                    <tabBarItem key="tabBarItem" title="Pun Joke" image="fork.knife" catalog="system" selectedImage="fork.knife" id="fl2-fb-cGN"/>
                     <connections>
                         <outlet property="jokeLabel" destination="G8y-jF-HNM" id="jTa-0n-9iQ"/>
                         <outlet property="toggleButton" destination="Xud-U1-tWh" id="nnc-Vc-DIX"/>
@@ -239,7 +239,7 @@
                             <constraint firstItem="gl5-SY-IzF" firstAttribute="top" secondItem="BxB-0Y-Bil" secondAttribute="bottom" constant="35" id="w3Q-91-sqy"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Good Joke" selectedImage="face.smiling" catalog="system" id="iir-v6-jqB"/>
+                    <tabBarItem key="tabBarItem" title="Good Joke" image="face.smiling" catalog="system" selectedImage="face.smiling" id="iir-v6-jqB"/>
                     <connections>
                         <outlet property="jokeLabel" destination="gl5-SY-IzF" id="URj-HT-z1C"/>
                         <outlet property="toggleButton" destination="gN2-r1-Xae" id="Bl2-Wz-bqm"/>
